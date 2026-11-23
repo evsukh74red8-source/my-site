@@ -3,67 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corebuse Pro — Инженерные решения и AI</title>
+    <title>CorebusePro — Инженерные решения и AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1 class="logo">Corebuse<span>Pro</span></h1>
-            <p class="tagline">Инженерные решения · Диагностика · Проектирование · AI</p>
-            <a href="#services" class="btn">Наши услуги</a>
+
+    <!-- Анимированный фон -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Шапка со стеклянным эффектом -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo">Corebuse<span>Pro</span></a>
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="status">
+                <span class="pulse"></span> Системы онлайн
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Что мы делаем</h2>
-                <div class="grid">
-                    <article class="card">
-                        <div class="icon">⚡</div>
-                        <h3>Диагностика авто</h3>
-                        <p>Сканеры, осциллографы, чтение и прошивка ЭБУ, ремонт электронных систем.</p>
-                    </article>
-                    <article class="card">
-                        <div class="icon">🔧</div>
-                        <h3>Проектирование электроники</h3>
-                        <p>Схемы и печатные платы. От идеи до готового устройства.</p>
-                    </article>
-                    <article class="card">
-                        <div class="icon">🤖</div>
-                        <h3>ИИ-агенты</h3>
-                        <p>Локальные LLM-системы AI для юридических и инженерных задач.</p>
-                    </article>
-                    <article class="card">
-                        <div class="icon">💻</div>
-                        <h3>Разработка ПО</h3>
-                        <p>Электронные системы, скрипты автоматизации, интеграции с оборудованием.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <h2>О нас</h2>
-                <p>Сертифицированные специалисты по работе с AI. Инженеры электронных систем автомобилей: электронщики, программисты, диагносты. Превращаем сложные технические задачи в работающие решения.</p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <h2>Связаться</h2>
-                <p>Напишите нам — обсудим ваш проект и найдём оптимальное решение.</p>
-                <a href="mailto:evsukh74red8@gmail.com" class="btn btn-outline">Написать на почту</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Hero -->
+    <section class="hero">
         <div class="container">
-            <p>© 2026 Corebuse Pro. Сделано на Cloudflare Pages.</p>
+            <h1 class="hero-title">
+                Инженерия,<br>
+                которая <span class="gradient-text">работает</span>
+            </h1>
+            <p class="hero-sub">
+                <span id="typed"></span><span class="cursor">|</span>
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">Наши услуги</a>
+                <a href="#contact" class="btn btn-ghost">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бегущая строка технологий -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>KiCad</span><span>•</span><span>Qwen AI</span><span>•</span><span>Диагностика ЭБУ</span><span>•</span><span>Осциллограф</span><span>•</span><span>Python</span><span>•</span><span>LLM-агенты</span><span>•</span><span>Печатные платы</span><span>•</span><span>Cloudflare</span><span>•</span>
+            <span>KiCad</span><span>•</span><span>Qwen AI</span><span>•</span><span>Диагностика ЭБУ</span><span>•</span><span>Осциллограф</span><span>•</span><span>Python</span><span>•</span><span>LLM-агенты</span><span>•</span><span>Печатные платы</span><span>•</span><span>Cloudflare</span><span>•</span>
+        </div>
+    </div>
+
+    <!-- Услуги -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Что мы делаем</h2>
+            <div class="grid">
+                <article class="card reveal">
+                    <div class="card-icon">⚡</div>
+                    <h3>Диагностика авто</h3>
+                    <p>Сканеры, осциллографы, чтение и прошивка ЭБУ, ремонт электронных систем.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">🔧</div>
+                    <h3>Проектирование электроники</h3>
+                    <p>Схемы и печатные платы. От идеи до готового устройства.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">🤖</div>
+                    <h3>ИИ-агенты</h3>
+                    <p>Локальные LLM-системы для юридических и инженерных задач.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">💻</div>
+                    <h3>Разработка ПО</h3>
+                    <p>Электронные системы, скрипты автоматизации, интеграции с оборудованием.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal">О нас</h2>
+            <p class="about-text reveal">
+                Сертифицированные специалисты по работе с AI. Инженеры электронных систем автомобилей: электронщики, программисты, диагносты. Превращаем сложные технические задачи в работающие решения.
+            </p>
+            <div class="stats reveal">
+                <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">направления</span></div>
+                <div class="stat"><span class="stat-num" data-target="24">0</span><span class="stat-label">часа доступности AI</span></div>
+                <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% локальные модели</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <div class="container contact-box reveal">
+            <h2 class="section-title">Связаться</h2>
+            <p>Напишите нам — обсудим ваш проект и найдём оптимальное решение.</p>
+            <a href="mailto:evsukh74red8@gmail.com" class="btn btn-primary btn-big">Написать на почту</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 CorebusePro · Сделано на Cloudflare Pages</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
