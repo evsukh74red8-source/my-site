@@ -5,7 +5,6 @@ const phrases = [
     "Локальные AI-агенты",
     "Разработка ПО для оборудования"
 ];
-];
 const typed = document.getElementById("typed");
 let pi = 0, ci = 0, del = false;
 
